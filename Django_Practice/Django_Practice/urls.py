@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('Url_pratice/', include('Url_practice.urls')),
     path('dynamic_webpages/', include('dynamic_webpages.urls')),
-    path('todolist/', include('loop_practice.urls'))
+    path('todolist/', include('loop_practice.urls')),
+    path('todo/', include('todo.urls'))
 ]

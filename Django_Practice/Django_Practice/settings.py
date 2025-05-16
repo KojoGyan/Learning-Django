@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'todo',
     'loop_practice',
     'dynamic_webpages',
     'Url_practice',

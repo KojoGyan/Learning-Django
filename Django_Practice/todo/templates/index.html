@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1> All Task </h1>
+<table>
+    <th> Task </th>
+    <th> Due Date </th>
+    <th> Due Time</th>
+    {% for task in Tasks %}
+    <tr>
+        <td>
+            {{ task }}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

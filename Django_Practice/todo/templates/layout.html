@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To do </title>
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+
+    <h1> Add Task </h1>
+    <form action="">
+        <span>
+            <input type="text" name="task" required>
+            <input type="date" name="Due-date">
+            <input type="time" name="Due-time">
+            <input type="submit" value="Add Task">
+        </span>
+    </form>
+    <ul>
+        <li> <a href="{% url 'todo:index' %}"> Home </a></li>
+        <li> <a href="{% url 'todo:today' %}"> Due Task </a></li>
+    </ul>
+</body>
+</html>
