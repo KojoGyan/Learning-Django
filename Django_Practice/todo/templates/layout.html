@@ -10,8 +10,9 @@
     {% endblock %}
 
     <h1> Add Task </h1>
-    <form action="">
+    <form action="{% url 'todo:index' %}" method = "post">
         <span>
+            {% csrf_token %} 
             <input type="text" name="task" required>
             <input type="date" name="Due-date">
             <input type="time" name="Due-time">

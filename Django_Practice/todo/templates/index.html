@@ -3,17 +3,25 @@
 {% block body %}
 
 <h1> All Task </h1>
-<table>
-    <th> Task </th>
-    <th> Due Date </th>
-    <th> Due Time</th>
-    {% for task in Tasks %}
-    <tr>
-        <td>
-            {{ task }}
-        </td>
-    </tr>
-    {% endfor %}
+<table style = "margin: 0; border-collapse: collapse">
+    <th style = "margin: 0; border: 1px solid black; width: 20em"> Task </th>
+    <th style = "margin: 0; border: 1px solid black; width: 20em"> Due Date </th>
+    <th style = "margin: 0; border: 1px solid black; width: 20em"> Due Time</th>
+
+        {% for task in Tasks %}
+        <tr>
+            <td style = "margin: 0; border: 1px solid black; width: 20em">
+                {{ task.name }}
+            </td>
+            <td style = "margin: 0; border: 1px solid black; width: 20em">
+                {{ task.date }}
+            </td>
+            <td style = "margin: 0; border: 1px solid black; width: 20em">
+                {{ task.time }}
+            </td>
+            
+        </tr>
+        {% endfor %}
 </table>
 
 {% endblock %}
